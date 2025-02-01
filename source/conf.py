@@ -24,5 +24,8 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+# Ensure Sphinx knows that the files are served from the /docs/ directory
+html_baseurl = '/docs/'
 html_theme = 'alabaster'
 html_static_path = ['_static']
+html_extra_path = ['_static']
