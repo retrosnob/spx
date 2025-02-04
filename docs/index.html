@@ -41,6 +41,139 @@
 documentation for details.</p>
 <div class="toctree-wrapper compound">
 </div>
+<section id="python-cheat-sheet">
+<h2>Python Cheat Sheet<a class="headerlink" href="#python-cheat-sheet" title="Link to this heading">¶</a></h2>
+<section id="basic-syntax">
+<h3>Basic Syntax<a class="headerlink" href="#basic-syntax" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">print(&quot;Hello,</span> <span class="pre">World!&quot;)</span></code></p></li>
+<li><p>Comments: <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">single-line</span></code> or <code class="docutils literal notranslate"><span class="pre">'''multi-line'''</span></code></p></li>
+</ul>
+</section>
+<section id="variables-data-types">
+<h3>Variables &amp; Data Types<a class="headerlink" href="#variables-data-types" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">5</span></code> (int), <code class="docutils literal notranslate"><span class="pre">3.14</span></code> (float), <code class="docutils literal notranslate"><span class="pre">&quot;Hello&quot;</span></code> (str)</p></li>
+<li><p>Lists: <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code></p></li>
+<li><p>Tuples: <code class="docutils literal notranslate"><span class="pre">(a,</span> <span class="pre">b)</span></code></p></li>
+<li><p>Dicts: <code class="docutils literal notranslate"><span class="pre">{&quot;key&quot;:</span> <span class="pre">&quot;value&quot;}</span></code></p></li>
+<li><p>Sets: <code class="docutils literal notranslate"><span class="pre">{1,</span> <span class="pre">2,</span> <span class="pre">3}</span></code></p></li>
+</ul>
+</section>
+<section id="control-flow">
+<h3>Control Flow<a class="headerlink" href="#control-flow" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">x</span> <span class="pre">&gt;</span> <span class="pre">0:</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">range(5):</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">condition:</span></code></p></li>
+</ul>
+</section>
+<section id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;Hi &quot;</span> <span class="o">+</span> <span class="n">name</span>
+</pre></div>
+</div>
+<p>Lambda Functions: <code class="docutils literal notranslate"><span class="pre">square</span> <span class="pre">=</span> <span class="pre">lambda</span> <span class="pre">x:</span> <span class="pre">x</span> <span class="pre">*</span> <span class="pre">x</span></code></p>
+</section>
+<section id="list-comprehensions">
+<h3>List Comprehensions<a class="headerlink" href="#list-comprehensions" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[x</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">range(10)</span> <span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0]</span></code></p></li>
+</ul>
+</section>
+<section id="string-methods">
+<h3>String Methods<a class="headerlink" href="#string-methods" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;abc&quot;.upper()</span></code> → <code class="docutils literal notranslate"><span class="pre">'ABC'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">Hello</span> <span class="pre">&quot;.strip()</span></code> → <code class="docutils literal notranslate"><span class="pre">'Hello'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;a,b,c&quot;.split(&quot;,&quot;)</span></code> → <code class="docutils literal notranslate"><span class="pre">['a',</span> <span class="pre">'b',</span> <span class="pre">'c']</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;.replace(&quot;h&quot;,</span> <span class="pre">&quot;H&quot;)</span></code> → <code class="docutils literal notranslate"><span class="pre">'Hello'</span></code></p></li>
+</ul>
+</section>
+<section id="math-modules">
+<h3>Math &amp; Modules<a class="headerlink" href="#math-modules" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">math</span></code> → <code class="docutils literal notranslate"><span class="pre">math.sqrt(16)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">random</span> <span class="pre">import</span> <span class="pre">randint</span></code> → <code class="docutils literal notranslate"><span class="pre">randint(1,</span> <span class="pre">10)</span></code></p></li>
+</ul>
+</section>
+<section id="file-i-o">
+<h3>File I/O<a class="headerlink" href="#file-i-o" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Writing to a file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="exception-handling">
+<h3>Exception Handling<a class="headerlink" href="#exception-handling" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error!&quot;</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Hi &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+</div>
+</section>
+<section id="useful-built-in-functions">
+<h3>Useful Built-in Functions<a class="headerlink" href="#useful-built-in-functions" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">len()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sum()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">min()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sorted()</span></code></p></li>
+</ul>
+</section>
+<section id="common-data-structures">
+<h3>Common Data Structures<a class="headerlink" href="#common-data-structures" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Lists:</strong> <code class="docutils literal notranslate"><span class="pre">append()</span></code>, <code class="docutils literal notranslate"><span class="pre">pop()</span></code>, <code class="docutils literal notranslate"><span class="pre">extend()</span></code></p></li>
+<li><p><strong>Dictionaries:</strong> <code class="docutils literal notranslate"><span class="pre">keys()</span></code>, <code class="docutils literal notranslate"><span class="pre">values()</span></code>, <code class="docutils literal notranslate"><span class="pre">get()</span></code></p></li>
+<li><p><strong>Sets:</strong> <code class="docutils literal notranslate"><span class="pre">add()</span></code>, <code class="docutils literal notranslate"><span class="pre">remove()</span></code>, <code class="docutils literal notranslate"><span class="pre">union()</span></code></p></li>
+</ul>
+</section>
+<section id="virtual-environments">
+<h3>Virtual Environments<a class="headerlink" href="#virtual-environments" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>env
+<span class="nb">source</span><span class="w"> </span>env/bin/activate<span class="w">  </span><span class="c1"># On Unix/macOS</span>
+env<span class="se">\S</span>cripts<span class="se">\a</span>ctivate<span class="w">     </span><span class="c1"># On Windows</span>
+</pre></div>
+</div>
+</section>
+<section id="pip-commands">
+<h3>Pip Commands<a class="headerlink" href="#pip-commands" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>package
+pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+</div>
+</section>
+<section id="quick-tips">
+<h3>Quick Tips<a class="headerlink" href="#quick-tips" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Check Python version: <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code></p></li>
+<li><p>Interactive mode: <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-i</span> <span class="pre">script.py</span></code></p></li>
+<li><p>REPL shortcut: <code class="docutils literal notranslate"><span class="pre">python</span></code> (starts an interactive shell)</p></li>
+</ul>
+</section>
+</section>
 </section>
 
 
