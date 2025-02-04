@@ -148,3 +148,24 @@ Quick Tips
 - Check Python version: ``python --version``
 - Interactive mode: ``python -i script.py``
 - REPL shortcut: ``python`` (starts an interactive shell)
+
+.. list-table:: **Python String Functions**
+   :header-rows: 1
+   :widths: 20 80
+
+   * - String Function
+     - Explanation
+   * - ``str.upper()``
+     - Converts all characters in the string to uppercase.
+   * - ``str.lower()``
+     - Converts all characters in the string to lowercase.
+   * - ``str.strip()``
+     - Removes leading and trailing whitespace from the string.
+   * - ``str.replace()``
+     - Replaces occurrences of a substring with another string.
+   * - ``str.split()``
+     - Splits the string into a list based on a delimiter.
+   * - ``str.find()``
+     - Returns the index of the first occurrence of a substring.
+   * - ``str.join()``
+     - Joins elements of an iterable with the string as a separator.
