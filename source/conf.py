@@ -26,3 +26,13 @@ exclude_patterns = []
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+
+
+# Set the correct base URL for GitHub Pages
+html_baseurl = "https://retrosnob.github.io/spx/"
+
+# Use a relative URL prefix for static assets
+html_css_files = [
+    '_static/basic.css',  # Adjust if you have custom CSS
+    '_static/custom.css'  # Add custom CSS if applicable
+]
