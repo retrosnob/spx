@@ -169,3 +169,5 @@ Quick Tips
      - Returns the index of the first occurrence of a substring.
    * - ``str.join()``
      - Joins elements of an iterable with the string as a separator.
+   * - test
+     - wheat
