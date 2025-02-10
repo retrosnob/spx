@@ -1,0 +1,8 @@
+.answer-box {
+    border: 2px solid black;
+    padding: 20px;
+    height: 150px;  /* Adjust height as needed */
+    margin: 10px 0;
+    background-color: #f9f9f9;  /* Optional light background */
+    box-sizing: border-box;
+}
